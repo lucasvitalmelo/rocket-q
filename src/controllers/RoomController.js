@@ -11,10 +11,10 @@ module.exports = {
       roomId += Math.floor(Math.random() * 10).toString()
     }
 
-    await db.run(`INSERT INT rooms(
+    await db.run(`INSERT INTO rooms(
       id,
       pass
-    )VALUES(
+    )VAlUES(
       ${parseInt(roomId)},
       ${pass}
     )`)
